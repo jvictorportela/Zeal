@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Zeal.Application.UseCases.User.Register;
 using Zeal.Communication.Requests.User;
 using Zeal.Communication.Responses.User;
 
@@ -10,9 +11,10 @@ public class UserController : ControllerBase
 {
     [HttpPost]
     [ProducesResponseType(typeof(ResponseRegisterUserjson), StatusCodes.Status201Created)]
-    public IActionResult Register(RequestRegisterUserJson request)
+    public IActionResult Register([FromBody] RequestRegisterUserJson request, [FromServices] RegisterUserUseCase useCase)
     {
+        var result = useCase.Execute(request);
 
-        return Created();
+        return Created(string.Empty, result);
     }
 }

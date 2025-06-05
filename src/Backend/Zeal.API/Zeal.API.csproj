@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\Zeal.Communication\Zeal.Communication.csproj" />
+    <ProjectReference Include="..\Zeal.Application\Zeal.Application.csproj" />
   </ItemGroup>
 
 </Project>

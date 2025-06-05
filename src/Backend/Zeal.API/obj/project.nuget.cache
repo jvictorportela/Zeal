@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N+wM0PAg/E4=",
+  "dgSpecHash": "EyVcW/BRzFU=",
   "success": true,
   "projectFilePath": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Zeal.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jvict\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
