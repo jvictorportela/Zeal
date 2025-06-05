@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\ProjetosPessoais\\Zeal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E5D9566-0D34-49BB-88C6-4054FEED6837}|src\\Backend\\Zeal.Domain\\Zeal.Domain.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E5D9566-0D34-49BB-88C6-4054FEED6837}|src\\Backend\\Zeal.Domain\\Zeal.Domain.csproj|solutionrelative:src\\backend\\zeal.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|solutionrelative:src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2826A947-BA42-48F0-AFFF-FFFD1C9692A9}|src\\Shared\\Zeal.Communication\\Zeal.Communication.csproj|c:\\projetospessoais\\zeal\\src\\shared\\zeal.communication\\requests\\user\\requestregisteruserjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2826A947-BA42-48F0-AFFF-FFFD1C9692A9}|src\\Shared\\Zeal.Communication\\Zeal.Communication.csproj|solutionrelative:src\\shared\\zeal.communication\\requests\\user\\requestregisteruserjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 143,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Zeal.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "src\\Backend\\Zeal.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RequestRegisterUserJson.cs",
+              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Shared\\Zeal.Communication\\Requests\\User\\RequestRegisterUserJson.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Zeal.Communication\\Requests\\User\\RequestRegisterUserJson.cs",
+              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Shared\\Zeal.Communication\\Requests\\User\\RequestRegisterUserJson.cs",
+              "RelativeToolTip": "src\\Shared\\Zeal.Communication\\Requests\\User\\RequestRegisterUserJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T16:38:19.671Z",
+              "WhenOpened": "2025-06-05T16:50:41.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T16:44:26.535Z",
               "EditorCaption": ""
             }
           ]
