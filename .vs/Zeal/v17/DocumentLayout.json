@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\ProjetosPessoais\\Zeal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E5D9566-0D34-49BB-88C6-4054FEED6837}|src\\Backend\\Zeal.Domain\\Zeal.Domain.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E5D9566-0D34-49BB-88C6-4054FEED6837}|src\\Backend\\Zeal.Domain\\Zeal.Domain.csproj|solutionrelative:src\\backend\\zeal.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.application\\usecases\\user\\register\\registeruservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|solutionrelative:src\\backend\\zeal.application\\usecases\\user\\register\\registeruservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.application\\usecases\\user\\register\\registeruserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|solutionrelative:src\\backend\\zeal.application\\usecases\\user\\register\\registeruserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|solutionrelative:src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,25 +25,52 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T16:44:26.535Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterUserUseCase.cs",
+              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserUseCase.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserUseCase.cs",
+              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserUseCase.cs",
+              "RelativeToolTip": "src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserUseCase.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:04:26.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterUserValidator.cs",
+              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserValidator.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserValidator.cs",
+              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserValidator.cs",
+              "RelativeToolTip": "src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:18:31.716Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Zeal.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "src\\Backend\\Zeal.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T16:38:19.671Z",
-              "EditorCaption": ""
             }
           ]
         }
