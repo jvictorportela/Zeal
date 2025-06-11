@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using Zeal.Communication.Requests.User;
+using Zeal.Exceptions;
 
 namespace Zeal.Application.UseCases.User.Register;
 
@@ -9,13 +10,13 @@ public class RegisterUserValidator : AbstractValidator<RequestRegisterUserJson>
     {
         RuleFor(user => user.Name)
             .NotEmpty()
-            .WithMessage("The name cannot be empty!");
+            .WithMessage(ResourceMessagesExceptions.NAME_EMPTY);
 
         RuleFor(user => user.Email)
             .NotEmpty()
-            .WithMessage("The email cannot be empty!")
+            .WithMessage(ResourceMessagesExceptions.EMAIL_EMPTY)
             .EmailAddress()
-            .WithMessage("The email is invalid");
+            .WithMessage(ResourceMessagesExceptions.EMAIL_INVALID);
 
         RuleFor(user => user.Password.Length)
             .GreaterThanOrEqualTo(6);
