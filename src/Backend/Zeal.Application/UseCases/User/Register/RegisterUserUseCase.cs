@@ -1,14 +1,15 @@
 ﻿using Zeal.Communication.Requests.User;
 using Zeal.Communication.Responses.User;
+using Zeal.Exceptions.ExceptionsBase;
 
 namespace Zeal.Application.UseCases.User.Register;
 
-public class RegisterUserUseCase
+public class RegisterUserUseCase : IRegisterUserUseCase
 {
-    public ResponseRegisterUserjson Execute(RequestRegisterUserJson request)
+    public async Task<ResponseRegisterUserjson> Execute(RequestRegisterUserJson request)
     {
         // Validate the request
-        Validate(request);
+        await Validate(request);
 
         // Mapear Request em entidade
 
@@ -22,7 +23,7 @@ public class RegisterUserUseCase
         };
     }
 
-    private void Validate(RequestRegisterUserJson request)
+    private async Task Validate(RequestRegisterUserJson request)
     {
         var validator = new RegisterUserValidator();
 
@@ -33,7 +34,7 @@ public class RegisterUserUseCase
             var errorsMessages = result.Errors.Select(error => error.ErrorMessage)
                 .ToList();
 
-            throw new Exception();
+            throw new ErrorOnValidationException(errorsMessages);
         }
     }
 }

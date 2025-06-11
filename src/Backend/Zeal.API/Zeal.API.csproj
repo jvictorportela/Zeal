@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\Zeal.Communication\Zeal.Communication.csproj" />
+    <ProjectReference Include="..\..\Shared\Zeal.Exceptions\Zeal.Exceptions.csproj" />
     <ProjectReference Include="..\Zeal.Application\Zeal.Application.csproj" />
   </ItemGroup>
 
