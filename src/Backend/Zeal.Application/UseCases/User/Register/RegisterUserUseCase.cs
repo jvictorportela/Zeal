@@ -1,5 +1,6 @@
 ﻿using Zeal.Communication.Requests.User;
 using Zeal.Communication.Responses.User;
+using Zeal.Exceptions.ExceptionsBase;
 
 namespace Zeal.Application.UseCases.User.Register;
 
@@ -33,7 +34,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
             var errorsMessages = result.Errors.Select(error => error.ErrorMessage)
                 .ToList();
 
-            throw new Exception();
+            throw new ErrorOnValidationException(errorsMessages);
         }
     }
 }

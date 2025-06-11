@@ -1,3 +1,4 @@
+using Zeal.API.Filters;
 using Zeal.API.Middleware;
 using Zeal.Application;
 
@@ -5,11 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplication(builder.Configuration);
+
 
 var app = builder.Build();
 

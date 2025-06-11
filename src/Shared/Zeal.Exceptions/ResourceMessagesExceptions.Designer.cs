@@ -86,5 +86,14 @@ namespace Zeal.Exceptions {
                 return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Unkown error.
+        /// </summary>
+        public static string UNKNOW_ERROR {
+            get {
+                return ResourceManager.GetString("UNKNOW_ERROR", resourceCulture);
+            }
+        }
     }
 }
