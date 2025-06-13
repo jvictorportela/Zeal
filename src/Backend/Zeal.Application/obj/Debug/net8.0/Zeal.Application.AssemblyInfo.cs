@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zeal.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d44ec14688ca54f41986e0797addccf02316a9b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c7149252a1dc6baf77473218833972ef549f701")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zeal.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zeal.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
