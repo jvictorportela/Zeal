@@ -1,4 +1,6 @@
-﻿using Zeal.Communication.Requests.User;
+﻿using Zeal.Application.Services.AutoMapper;
+using Zeal.Application.Services.Cryptography;
+using Zeal.Communication.Requests.User;
 using Zeal.Communication.Responses.User;
 using Zeal.Exceptions.ExceptionsBase;
 
@@ -9,11 +11,20 @@ public class RegisterUserUseCase : IRegisterUserUseCase
     public async Task<ResponseRegisterUserjson> Execute(RequestRegisterUserJson request)
     {
         // Validate the request
-        await Validate(request);
+        Validate(request);
 
         // Mapear Request em entidade
+        var autoMapper = new AutoMapper.MapperConfiguration(options =>
+        {
+            options.AddProfile(new AutoMapping());
+        }).CreateMapper();
+
+        var user = autoMapper.Map<Domain.Entities.User>(request);
 
         // Criptografar a senha
+        var cryptographyPassword = new PasswordEncrypter();
+
+        user.Password = cryptographyPassword.Encrypt(request.Password);
 
         // Salvar no banco de dados
 
@@ -23,7 +34,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         };
     }
 
-    private async Task Validate(RequestRegisterUserJson request)
+    private void Validate(RequestRegisterUserJson request)
     {
         var validator = new RegisterUserValidator();
 

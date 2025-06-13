@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.6" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.6" />
@@ -15,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\Zeal.Communication\Zeal.Communication.csproj" />
     <ProjectReference Include="..\..\Shared\Zeal.Exceptions\Zeal.Exceptions.csproj" />
+    <ProjectReference Include="..\Zeal.Domain\Zeal.Domain.csproj" />
   </ItemGroup>
 
 </Project>
