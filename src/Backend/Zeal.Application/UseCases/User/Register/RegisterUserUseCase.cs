@@ -1,32 +1,45 @@
-﻿using Zeal.Application.Services.AutoMapper;
+﻿using AutoMapper;
 using Zeal.Application.Services.Cryptography;
 using Zeal.Communication.Requests.User;
 using Zeal.Communication.Responses.User;
+using Zeal.Domain.Repositories;
+using Zeal.Domain.Repositories.User;
 using Zeal.Exceptions.ExceptionsBase;
 
 namespace Zeal.Application.UseCases.User.Register;
 
 public class RegisterUserUseCase : IRegisterUserUseCase
 {
+    private readonly IUserWriteOnlyRepository _writeOnlyRepository;
+    private readonly IUserReadOnlyRepository _readOnlyRepository;
+    private readonly IMapper _mapper;
+    private readonly PasswordEncrypter _passwordEncrypter;
+    private readonly IUnitOfWork _unitOfWork;
+
+    public RegisterUserUseCase(
+        IUserWriteOnlyRepository writeOnlyRepository, 
+        IUserReadOnlyRepository readOnlyRepository,
+        IMapper mapper,
+        PasswordEncrypter passwordEncrypter,
+        IUnitOfWork unitOfWork)
+    {
+        _writeOnlyRepository = writeOnlyRepository;
+        _readOnlyRepository = readOnlyRepository;
+        _mapper = mapper;
+        _passwordEncrypter = passwordEncrypter;
+        _unitOfWork = unitOfWork;
+    }
+
     public async Task<ResponseRegisterUserjson> Execute(RequestRegisterUserJson request)
     {
-        // Validate the request
         Validate(request);
 
-        // Mapear Request em entidade
-        var autoMapper = new AutoMapper.MapperConfiguration(options =>
-        {
-            options.AddProfile(new AutoMapping());
-        }).CreateMapper();
+        var user = _mapper.Map<Domain.Entities.User>(request);
 
-        var user = autoMapper.Map<Domain.Entities.User>(request);
+        user.Password = _passwordEncrypter.Encrypt(request.Password);
 
-        // Criptografar a senha
-        var cryptographyPassword = new PasswordEncrypter();
-
-        user.Password = cryptographyPassword.Encrypt(request.Password);
-
-        // Salvar no banco de dados
+        await _writeOnlyRepository.Add(user);
+        await _unitOfWork.Commit();
 
         return new ResponseRegisterUserjson
         {

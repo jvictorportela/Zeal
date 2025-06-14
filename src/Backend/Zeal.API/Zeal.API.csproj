@@ -15,6 +15,7 @@
     <ProjectReference Include="..\..\Shared\Zeal.Communication\Zeal.Communication.csproj" />
     <ProjectReference Include="..\..\Shared\Zeal.Exceptions\Zeal.Exceptions.csproj" />
     <ProjectReference Include="..\Zeal.Application\Zeal.Application.csproj" />
+    <ProjectReference Include="..\Zeal.Infra\Zeal.Infra.csproj" />
   </ItemGroup>
 
 </Project>
