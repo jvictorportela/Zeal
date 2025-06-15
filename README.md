@@ -1,7 +1,7 @@
-# Montech API Documentation
+# Zeal API Documentation
 
 ## 📚 Sobre o Projeto
-O **Montech API** é uma solução desenvolvida para monitorar bens materiais e serviços de empresas. Reestruturado em formato de API, o projeto utiliza princípios de **Domain-Driven Design (DDD)**, garantindo uma arquitetura robusta, modular e fácil de manter. Ele evolui constantemente para atender às melhores práticas e novas demandas.
+O **Zeal API** é uma solução desenvolvida para monitorar bens materiais e serviços de empresas. Reestruturado em formato de API, o projeto utiliza princípios de **Domain-Driven Design (DDD)**, garantindo uma arquitetura robusta, modular e fácil de manter. Ele evolui constantemente para atender às melhores práticas e novas demandas.
 
 ---
 
@@ -81,11 +81,11 @@ O **Montech API** é uma solução desenvolvida para monitorar bens materiais e 
 ### Passos:
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/montech-api.git
+   git clone https://github.com/SEU_USUARIO/Zeal-api.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
-   cd montech-api
+   cd Zeal-api
    ```
 3. Configure a string de conexão no arquivo `appsettings.json`.
 
