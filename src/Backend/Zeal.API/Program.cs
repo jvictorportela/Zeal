@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 // Injeção de dependências
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddInfra(builder.Configuration);

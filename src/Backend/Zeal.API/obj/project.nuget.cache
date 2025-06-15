@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XwlCwcEbC9g=",
+  "dgSpecHash": "rf8di0oxNys=",
   "success": true,
   "projectFilePath": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Zeal.API.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.6\\microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.6\\microsoft.extensions.caching.memory.9.0.6.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.6\\microsoft.extensions.configuration.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\jvict\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.6\\microsoft.extensions.configuration.binder.9.0.6.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.6\\microsoft.extensions.dependencyinjection.9.0.6.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.6\\microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.extensions.logging\\9.0.6\\microsoft.extensions.logging.9.0.6.nupkg.sha512",

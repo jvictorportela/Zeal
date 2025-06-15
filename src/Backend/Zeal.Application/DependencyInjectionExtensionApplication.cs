@@ -12,7 +12,7 @@ public static class DependencyInjectionExtensionApplication
     {
         AddUseCases(services);
         AddAutoMapper(services, configuration);
-        AddPasswordEncrypter(services);
+        AddPasswordEncrypter(services, configuration);
     }
 
     private static void AddUseCases(IServiceCollection services)
@@ -28,8 +28,11 @@ public static class DependencyInjectionExtensionApplication
         }).CreateMapper());
     }
 
-    private static void AddPasswordEncrypter(IServiceCollection services)
+    private static void AddPasswordEncrypter(IServiceCollection services, IConfiguration configuration)
     {
-        services.AddScoped(options => new PasswordEncrypter());
+        var aditionalKey = configuration.GetValue<string>("Settings:Passwords:AdditionalKey");
+
+        services.AddScoped(options => new PasswordEncrypter(aditionalKey!)
+        );
     }
 }

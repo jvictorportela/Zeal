@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
+using FluentValidation.Results;
 using Zeal.Application.Services.Cryptography;
 using Zeal.Communication.Requests.User;
 using Zeal.Communication.Responses.User;
 using Zeal.Domain.Repositories;
 using Zeal.Domain.Repositories.User;
+using Zeal.Exceptions;
 using Zeal.Exceptions.ExceptionsBase;
 
 namespace Zeal.Application.UseCases.User.Register;
@@ -32,7 +34,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
 
     public async Task<ResponseRegisterUserjson> Execute(RequestRegisterUserJson request)
     {
-        Validate(request);
+        await Validate(request);
 
         var user = _mapper.Map<Domain.Entities.User>(request);
 
@@ -47,11 +49,16 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         };
     }
 
-    private void Validate(RequestRegisterUserJson request)
+    private async Task Validate(RequestRegisterUserJson request)
     {
         var validator = new RegisterUserValidator();
 
         var result = validator.Validate(request);
+
+        var emailExist = await _readOnlyRepository.ExistActiveUserWithEmail(request.Email);
+
+        if (emailExist)
+            result.Errors.Add(new ValidationFailure(string.Empty, ResourceMessagesExceptions.EMAIL_ALREADY_REGISTERED));
 
         if (!result.IsValid)
         {

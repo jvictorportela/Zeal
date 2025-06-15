@@ -5,10 +5,16 @@ namespace Zeal.Application.Services.Cryptography;
 
 public class PasswordEncrypter
 {
+    private readonly string _aditionalKey;
+
+    public PasswordEncrypter(string aditionalKey)
+    {
+        _aditionalKey = aditionalKey;
+    }
+
     public string Encrypt(string password)
     {
-        var aditionalKey = "notToday";
-        var newPassword = $"{password}{aditionalKey}";
+        var newPassword = $"{password}{_aditionalKey}";
 
         var bytes = Encoding.UTF8.GetBytes(newPassword);
         var hashBytes = SHA512.HashData(bytes);
