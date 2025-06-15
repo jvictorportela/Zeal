@@ -24,7 +24,7 @@ public static class DependencyInjectionExtensionInfra
 
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("Data Source=DESKTOP-JTN702V;Initial Catalog=zeal;Trusted_Connection=true;TrustServerCertificate=true;");
+        var connectionString = configuration.GetConnectionString("Connection");
 
         services.AddDbContext<ZealDbContext>(options =>
         {

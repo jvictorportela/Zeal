@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zeal.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+877865d9ebdca1caf1c63e6720a47af1c7416e1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+207d760a1d090f31193809c631ebd0377525acb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zeal.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zeal.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
