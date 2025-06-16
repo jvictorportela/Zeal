@@ -2,6 +2,8 @@ using Zeal.API.Filters;
 using Zeal.API.Middleware;
 using Zeal.Application;
 using Zeal.Infra;
+using Zeal.Infra.Extensions;
+using Zeal.Infra.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,4 +38,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+MigrateDatabase();
+
 app.Run();
+
+void MigrateDatabase()
+{
+    var conectionString = builder.Configuration.ConnectionString();
+
+    DatabaseMigration.Migrate(conectionString);
+}

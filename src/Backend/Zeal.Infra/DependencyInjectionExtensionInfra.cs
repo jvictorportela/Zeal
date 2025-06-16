@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Zeal.Infra.DataAccess;
 using Zeal.Infra.DataAccess.Repositories;
+using Zeal.Infra.Extensions;
 
 namespace Zeal.Infra;
 
@@ -24,7 +25,7 @@ public static class DependencyInjectionExtensionInfra
 
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("Connection");
+        var connectionString = configuration.ConnectionString();
 
         services.AddDbContext<ZealDbContext>(options =>
         {
