@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JNaUJ8kySVQ=",
+  "dgSpecHash": "Vl7a8mkP1Cs=",
   "success": true,
   "projectFilePath": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Infra\\Zeal.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jvict\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\jvict\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jvict\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.6\\microsoft.data.sqlclient.5.1.6.nupkg.sha512",
