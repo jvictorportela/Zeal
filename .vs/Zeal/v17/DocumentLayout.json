@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\ProjetosPessoais\\Zeal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{053D4D2B-E3D4-4518-8842-F3597290500D}|src\\Backend\\Zeal.Infra\\Zeal.Infra.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.infra\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{053D4D2B-E3D4-4518-8842-F3597290500D}|src\\Backend\\Zeal.Infra\\Zeal.Infra.csproj|solutionrelative:src\\backend\\zeal.infra\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|solutionrelative:src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.application\\usecases\\user\\register\\registeruserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|solutionrelative:src\\backend\\zeal.application\\usecases\\user\\register\\registeruserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|solutionrelative:src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{053D4D2B-E3D4-4518-8842-F3597290500D}|src\\Backend\\Zeal.Infra\\Zeal.Infra.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.infra\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{053D4D2B-E3D4-4518-8842-F3597290500D}|src\\Backend\\Zeal.Infra\\Zeal.Infra.csproj|solutionrelative:src\\backend\\zeal.infra\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 193,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -44,7 +44,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserUseCase.cs",
               "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserUseCase.cs",
               "RelativeToolTip": "src\\Backend\\Zeal.Application\\UseCases\\User\\Register\\RegisterUserUseCase.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwDkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T14:14:49.178Z",
               "IsPinned": true,
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Infra\\DataAccess\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "src\\Backend\\Zeal.Infra\\DataAccess\\Repositories\\UserRepository.cs",
