@@ -311,6 +311,14 @@
               "target": "Package",
               "version": "[2.1.66, )"
             },
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.6, )"

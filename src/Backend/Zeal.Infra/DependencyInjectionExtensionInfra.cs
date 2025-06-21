@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FluentMigrator.Runner;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 using Zeal.Infra.DataAccess;
 using Zeal.Infra.DataAccess.Repositories;
 using Zeal.Infra.Extensions;
@@ -13,6 +15,7 @@ public static class DependencyInjectionExtensionInfra
     {
         AddRepositories(services);
         AddDbContext(services, configuration);
+        AddFluentMigrator(services, configuration);
     }
 
     private static void AddRepositories(IServiceCollection services)
@@ -29,7 +32,20 @@ public static class DependencyInjectionExtensionInfra
 
         services.AddDbContext<ZealDbContext>(options =>
         {
-            options.UseSqlServer(configuration.GetConnectionString(connectionString!));
+            options.UseSqlServer(connectionString);
+        });
+    }
+
+    private static void AddFluentMigrator(IServiceCollection services, IConfiguration configuration)
+    {
+        var connectionString = configuration.ConnectionString();
+
+        services.AddFluentMigratorCore().ConfigureRunner(options =>
+        {
+            options
+            .AddSqlServer()
+            .WithGlobalConnectionString(connectionString)
+            .ScanIn(Assembly.Load("Zeal.Infra")).For.All();
         });
     }
 }
