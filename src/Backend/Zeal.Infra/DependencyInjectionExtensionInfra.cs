@@ -32,7 +32,7 @@ public static class DependencyInjectionExtensionInfra
 
         services.AddDbContext<ZealDbContext>(options =>
         {
-            options.UseSqlServer(configuration.GetConnectionString(connectionString!));
+            options.UseSqlServer(connectionString);
         });
     }
 

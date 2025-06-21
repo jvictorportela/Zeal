@@ -10,6 +10,6 @@ public abstract class VersionBase : ForwardOnlyMigration
         return Create.Table(table)
             .WithColumn("Id").AsInt64().PrimaryKey().Identity() // Identity column for auto-incrementing primary key
             .WithColumn("Active").AsBoolean().NotNullable()
-            .WithColumn("CreatedAt").AsDateTime().NotNullable();
+            .WithColumn("CreatedOn").AsDateTime().NotNullable();
     }
 }
