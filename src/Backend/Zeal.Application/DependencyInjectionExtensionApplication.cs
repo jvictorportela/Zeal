@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Zeal.Application.Services.AutoMapper;
 using Zeal.Application.Services.Cryptography;
+using Zeal.Application.UseCases.User.Login.DoLogin;
 using Zeal.Application.UseCases.User.Register;
 
 namespace Zeal.Application;
@@ -18,6 +19,7 @@ public static class DependencyInjectionExtensionApplication
     private static void AddUseCases(IServiceCollection services)
     {
         services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+        services.AddScoped<IDoLoginUseCase, DoLoginUseCase>();
     }
 
     private static void AddAutoMapper(IServiceCollection services, IConfiguration configuration)

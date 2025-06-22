@@ -11,5 +11,13 @@ public class UserRepository : IUserWriteOnlyRepository, IUserUpdateOnlyRepositor
 
     public async Task Add(Domain.Entities.User user) => await _context.Users.AddAsync(user);
 
-    public async Task<bool> ExistActiveUserWithEmail(string email) => await _context.Users.AnyAsync(user => user.Email.Equals(email) && user.Active);
+    public async Task<bool> ExistActiveUserWithEmail(string email) => await _context.Users.AsNoTracking().AnyAsync(user => user.Email.Equals(email) && user.Active);
+
+    public async Task<Domain.Entities.User?> GetByEmailAndPassword(string email, string password)
+    {
+        return await _context
+            .Users
+            .AsNoTracking() // Use AsNoTracking for read-only queries to improve performance
+            .FirstOrDefaultAsync(user => user.Email.Equals(email) && user.Password.Equals(password) && user.Active);
+    }
 }
