@@ -5,6 +5,7 @@ using Zeal.Communication.Requests.User;
 using Zeal.Communication.Responses.User;
 using Zeal.Domain.Repositories;
 using Zeal.Domain.Repositories.User;
+using Zeal.Domain.Security.Tokens;
 using Zeal.Exceptions;
 using Zeal.Exceptions.ExceptionsBase;
 
@@ -17,19 +18,22 @@ public class RegisterUserUseCase : IRegisterUserUseCase
     private readonly IMapper _mapper;
     private readonly PasswordEncrypter _passwordEncrypter;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IAccessTokenGenerator _accessTokenGenerator;
 
     public RegisterUserUseCase(
         IUserWriteOnlyRepository writeOnlyRepository, 
         IUserReadOnlyRepository readOnlyRepository,
         IMapper mapper,
         PasswordEncrypter passwordEncrypter,
-        IUnitOfWork unitOfWork)
+        IUnitOfWork unitOfWork,
+        IAccessTokenGenerator accessTokenGenerator)
     {
         _writeOnlyRepository = writeOnlyRepository;
         _readOnlyRepository = readOnlyRepository;
         _mapper = mapper;
         _passwordEncrypter = passwordEncrypter;
         _unitOfWork = unitOfWork;
+        _accessTokenGenerator = accessTokenGenerator;
     }
 
     public async Task<ResponseRegisterUserjson> Execute(RequestRegisterUserJson request)
@@ -39,13 +43,18 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         var user = _mapper.Map<Domain.Entities.User>(request);
 
         user.Password = _passwordEncrypter.Encrypt(request.Password);
+        user.UserIdentifier = Guid.NewGuid();
 
         await _writeOnlyRepository.Add(user);
         await _unitOfWork.Commit();
 
         return new ResponseRegisterUserjson
         {
-            Name = request.Name
+            Name = request.Name,
+            Tokens = new ResponseTokensJson
+            {
+                AccessToken = _accessTokenGenerator.Generate(user.UserIdentifier)
+            }
         };
     }
 
