@@ -5,9 +5,7 @@ using Zeal.Communication.Responses.User;
 
 namespace Zeal.API.Controllers;
 
-[Route("[controller]")]
-[ApiController]
-public class UserController : ControllerBase
+public class UserController : ZealBaseController
 {
     [HttpPost]
     [ProducesResponseType(typeof(ResponseRegisterUserjson), StatusCodes.Status201Created)]

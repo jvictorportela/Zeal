@@ -3,9 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+using Zeal.Domain.Security.Tokens;
 using Zeal.Infra.DataAccess;
 using Zeal.Infra.DataAccess.Repositories;
 using Zeal.Infra.Extensions;
+using Zeal.Infra.Security.Tokens.Access.Generator;
+using Zeal.Infra.Security.Tokens.Access.Validator;
 
 namespace Zeal.Infra;
 
@@ -16,6 +19,7 @@ public static class DependencyInjectionExtensionInfra
         AddRepositories(services);
         AddDbContext(services, configuration);
         AddFluentMigrator(services, configuration);
+        AddTokens(services, configuration);
     }
 
     private static void AddRepositories(IServiceCollection services)
@@ -47,5 +51,15 @@ public static class DependencyInjectionExtensionInfra
             .WithGlobalConnectionString(connectionString)
             .ScanIn(Assembly.Load("Zeal.Infra")).For.All();
         });
+    }
+
+    private static void AddTokens(IServiceCollection services, IConfiguration configuration)
+    {
+        var expirationTimeMinutes = configuration.GetValue<uint>("Settings:Jwt:ExpirationTimeMinutes");
+
+        var signingKey = configuration.GetValue<string>("Settings:Jwt:SigningKey");
+
+        services.AddScoped<IAccessTokenGenerator>(option => new JwtTokenGenerator(expirationTimeMinutes, signingKey!));
+        services.AddScoped<IAccessTokenValidator>(option => new JwtTokenValidator(signingKey!));
     }
 }
