@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using FluentValidation.Results;
-using Zeal.Application.Services.Cryptography;
 using Zeal.Communication.Requests.User;
 using Zeal.Communication.Responses.User;
 using Zeal.Domain.Repositories;
 using Zeal.Domain.Repositories.User;
+using Zeal.Domain.Security.Cryptography;
 using Zeal.Domain.Security.Tokens;
 using Zeal.Exceptions;
 using Zeal.Exceptions.ExceptionsBase;
@@ -16,7 +16,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
     private readonly IUserWriteOnlyRepository _writeOnlyRepository;
     private readonly IUserReadOnlyRepository _readOnlyRepository;
     private readonly IMapper _mapper;
-    private readonly PasswordEncrypter _passwordEncrypter;
+    private readonly IPasswordEncrypter _passwordEncrypter;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IAccessTokenGenerator _accessTokenGenerator;
 
@@ -24,7 +24,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         IUserWriteOnlyRepository writeOnlyRepository, 
         IUserReadOnlyRepository readOnlyRepository,
         IMapper mapper,
-        PasswordEncrypter passwordEncrypter,
+        IPasswordEncrypter passwordEncrypter,
         IUnitOfWork unitOfWork,
         IAccessTokenGenerator accessTokenGenerator)
     {
