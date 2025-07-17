@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "C:\\ProjetosPessoais\\Zeal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.application\\dependencyinjectionextensionapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|solutionrelative:src\\backend\\zeal.application\\dependencyinjectionextensionapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.application\\usecases\\user\\changepassword\\ichangepasswordusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|solutionrelative:src\\backend\\zeal.application\\usecases\\user\\changepassword\\ichangepasswordusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|solutionrelative:src\\backend\\zeal.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.application\\usecases\\user\\changepassword\\changepasswordusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|solutionrelative:src\\backend\\zeal.application\\usecases\\user\\changepassword\\changepasswordusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.application\\usecases\\user\\changepassword\\changepasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54F1E07C-8EA0-4C83-A22D-ECB8B8883D3E}|src\\Backend\\Zeal.Application\\Zeal.Application.csproj|solutionrelative:src\\backend\\zeal.application\\usecases\\user\\changepassword\\changepasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|c:\\projetospessoais\\zeal\\src\\backend\\zeal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE9C06D8-B25D-492C-9255-17F87BE32CA3}|src\\Backend\\Zeal.API\\Zeal.API.csproj|solutionrelative:src\\backend\\zeal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -34,11 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 219,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Program.cs",
               "RelativeDocumentMoniker": "src\\Backend\\Zeal.API\\Program.cs",
@@ -51,78 +31,12 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "src\\Backend\\Zeal.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAIwDAAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T11:01:07.638Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DependencyInjectionExtensionApplication.cs",
-              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\DependencyInjectionExtensionApplication.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Zeal.Application\\DependencyInjectionExtensionApplication.cs",
-              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\DependencyInjectionExtensionApplication.cs",
-              "RelativeToolTip": "src\\Backend\\Zeal.Application\\DependencyInjectionExtensionApplication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T11:51:42.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IChangePasswordUseCase.cs",
-              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\IChangePasswordUseCase.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\IChangePasswordUseCase.cs",
-              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\IChangePasswordUseCase.cs",
-              "RelativeToolTip": "src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\IChangePasswordUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T11:51:25.691Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChangePasswordUseCase.cs",
-              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\ChangePasswordUseCase.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\ChangePasswordUseCase.cs",
-              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\ChangePasswordUseCase.cs",
-              "RelativeToolTip": "src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\ChangePasswordUseCase.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowCwAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T11:09:03.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChangePasswordValidator.cs",
-              "DocumentMoniker": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\ChangePasswordValidator.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\ChangePasswordValidator.cs",
-              "ToolTip": "C:\\ProjetosPessoais\\Zeal\\src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\ChangePasswordValidator.cs",
-              "RelativeToolTip": "src\\Backend\\Zeal.Application\\UseCases\\User\\ChangePassword\\ChangePasswordValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T11:11:49.106Z",
-              "EditorCaption": ""
             }
           ]
         }
