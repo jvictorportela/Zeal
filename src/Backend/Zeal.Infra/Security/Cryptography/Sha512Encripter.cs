@@ -1,13 +1,14 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using Zeal.Domain.Security.Cryptography;
 
-namespace Zeal.Application.Services.Cryptography;
+namespace Zeal.Infra.Security.Cryptography;
 
-public class PasswordEncrypter
+public class Sha512Encripter : IPasswordEncrypter
 {
     private readonly string _aditionalKey;
 
-    public PasswordEncrypter(string aditionalKey)
+    public Sha512Encripter(string aditionalKey)
     {
         _aditionalKey = aditionalKey;
     }

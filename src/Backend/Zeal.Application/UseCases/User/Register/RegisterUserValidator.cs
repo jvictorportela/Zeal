@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using Zeal.Application.SharedValidators;
 using Zeal.Communication.Requests.User;
 using Zeal.Exceptions;
 
@@ -18,7 +19,6 @@ public class RegisterUserValidator : AbstractValidator<RequestRegisterUserJson>
             .EmailAddress()
             .WithMessage(ResourceMessagesExceptions.EMAIL_INVALID);
 
-        RuleFor(user => user.Password.Length)
-            .GreaterThanOrEqualTo(6);
+        RuleFor(user => user.Password).SetValidator(new PasswordValidator<RequestRegisterUserJson>());
     }
 }

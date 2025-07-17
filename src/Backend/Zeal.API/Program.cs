@@ -1,7 +1,9 @@
 using Microsoft.OpenApi.Models;
 using Zeal.API.Filters;
 using Zeal.API.Middleware;
+using Zeal.API.Token;
 using Zeal.Application;
+using Zeal.Domain.Security.Tokens;
 using Zeal.Infra;
 using Zeal.Infra.Extensions;
 using Zeal.Infra.Migrations;
@@ -50,7 +52,10 @@ builder.Services.AddSwaggerGen(options =>
 // Injeção de dependências
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddInfra(builder.Configuration);
+builder.Services.AddScoped<ITokenProvider, HttpContextTokenValue>();
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
+
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
