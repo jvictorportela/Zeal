@@ -33,7 +33,12 @@ public static class DependencyInjectionExtensionInfra
         services.AddScoped<Domain.Repositories.User.IUserReadOnlyRepository, UserRepository>();
         services.AddScoped<Domain.Repositories.User.IUserWriteOnlyRepository, UserRepository>();
         services.AddScoped<Domain.Repositories.User.IUserUpdateOnlyRepository, UserRepository>();
+
         services.AddScoped<Domain.Repositories.IUnitOfWork, UnitOfWork>();
+
+        services.AddScoped<Domain.Repositories.Event.IEventWriteOnlyRepository, EventRepository>();
+
+        services.AddScoped<Domain.Repositories.Address.IAddressWriteOnlyRepository, AddressRepository>();
     }
 
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
