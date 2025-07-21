@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Zeal.API.Attributes;
 using Zeal.Application.UseCases.Event;
+using Zeal.Application.UseCases.Event.Filter;
 using Zeal.Communication.Requests.Event;
 using Zeal.Communication.Responses.Error;
 using Zeal.Communication.Responses.Event;
@@ -18,5 +19,18 @@ public class EventController : ZealBaseController
         var response = await useCase.Execute(request);
 
         return Created(string.Empty, response);
+    }
+
+    [HttpPost("filter")]
+    [ProducesResponseType(typeof(ResponseEventsJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public async Task<IActionResult> Filter([FromServices] IFilterEventUseCase useCase, [FromBody] RequestFilterEventJson request)
+    {
+        var response = await useCase.Execute(request);
+
+        if (response.Events.Any())
+            return Ok(response);
+
+        return NoContent();
     }
 }

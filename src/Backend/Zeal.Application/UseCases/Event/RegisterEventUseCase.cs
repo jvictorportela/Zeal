@@ -2,7 +2,6 @@
 using Zeal.Communication.Requests.Event;
 using Zeal.Communication.Responses.Event;
 using Zeal.Domain.Repositories;
-using Zeal.Domain.Repositories.Address;
 using Zeal.Domain.Repositories.Event;
 using Zeal.Domain.Services.LoggedUser;
 using Zeal.Exceptions.ExceptionsBase;
@@ -12,15 +11,13 @@ namespace Zeal.Application.UseCases.Event;
 public class RegisterEventUseCase : IRegisterEventUseCase
 {
     private readonly IEventWriteOnlyRepository _eventWriteOnlyRepository;
-    private readonly IAddressWriteOnlyRepository _addressWriteOnlyRepository;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
     private readonly ILoggedUser _loggedUser;
 
-    public RegisterEventUseCase(IEventWriteOnlyRepository eventWriteOnlyRepository, IAddressWriteOnlyRepository addressWriteOnlyRepository, IUnitOfWork unitOfWork, IMapper mapper, ILoggedUser loggedUser)
+    public RegisterEventUseCase(IEventWriteOnlyRepository eventWriteOnlyRepository, IUnitOfWork unitOfWork, IMapper mapper, ILoggedUser loggedUser)
     {
         _eventWriteOnlyRepository = eventWriteOnlyRepository;
-        _addressWriteOnlyRepository = addressWriteOnlyRepository;
         _unitOfWork = unitOfWork;
         _mapper = mapper;
         _loggedUser = loggedUser;
